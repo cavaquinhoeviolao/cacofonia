@@ -4,73 +4,88 @@
   <meta charset="UTF-8" />
   <title>Carrossel do Cacofonia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Swiper CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <style>
-  body {
-    margin: 0;
-    background: transparent;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  .swiper {
-    width: 80%;
-    height: 90%;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  }
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-  }
-  .swiper-slide img {
-    max-height: 100%;
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  .swiper-pagination-bullets {
-    bottom: 10px !important;
-  }
+    body {
+      margin: 0;
+      background: transparent;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      font-family: sans-serif;
+    }
 
-  /* 🔵 Cor personalizada da bolinha ativa */
-  .swiper-pagination-bullet-active {
-    background-color: #21ff01 !important;
-  }
-</style>
+    /* TÍTULO !cacofonia */
+    .titulo {
+      margin-top: 10px;
+      background-color: #3e2159; /* roxo escuro */
+      color: #21ff01; /* verde-limão */
+      font-size: 2em;
+      font-weight: bold;
+      padding: 5px 20px;
+      border-radius: 20px;
+    }
 
+    .swiper {
+      width: 80%;
+      height: 85%;
+      margin-top: 10px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+    }
+
+    .swiper-slide img {
+      max-height: 100%;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .swiper-pagination-bullets {
+      bottom: 10px !important;
+    }
+
+    /* Bolinha ativa = verde-limão */
+    .swiper-pagination-bullet-active {
+      background-color: #21ff01 !important;
+    }
+  </style>
 </head>
 <body>
-  <!-- Swiper -->
+
+  <!-- TÍTULO -->
+  <div class="titulo">!cacofonia</div>
+
+  <!-- CARROSSEL -->
   <div class="swiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco01.png" alt="Caco 01" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco02.png" alt="Caco 02" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco03.png" alt="Caco 03" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco04.png" alt="Caco 04" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco05.png" alt="Caco 05" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco06.png" alt="Caco 06" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco07.png" alt="Caco 07" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco08.png" alt="Caco 08" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco09.png" alt="Caco 09" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco10.png" alt="Caco 10" /></div>
+      <!-- Substitua os links se necessário -->
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco01.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco02.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco03.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco04.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco05.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco06.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco07.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco08.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco09.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco10.png" /></div>
     </div>
-    <!-- Bolinhas -->
     <div class="swiper-pagination"></div>
   </div>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Configuração do Swiper -->
   <script>
     const swiper = new Swiper('.swiper', {
       loop: true,
