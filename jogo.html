@@ -1,105 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Carrossel do Cacofonia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <style>
-    body {
-      margin: 0;
-      background: transparent;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      height: 100vh;
-      font-family: sans-serif;
-    }
+<meta charset="UTF-8">
+<title>Inscritos – Sorteio</title>
 
-    /* TÍTULO !cacofonia */
-    .titulo {
-      margin-top: 10px;
-      background-color: #3B2246; /* roxo escuro */
-      color: #21ff01; /* verde-limão */
-      font-size: 2em;
-      padding: 5px 20px;
-      border-radius: 20px;
-      font-family: "Arial Hebrew", sans-serif;
-    }
+<style>
+  body {
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-    .swiper {
-      width: 80%;
-      height: 85%;
-      margin-top: 10px;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    background: transparent;
+  }
 
-    .swiper-slide {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #fff;
-    }
+  th, td {
+    padding: 8px 12px;
+    text-align: left;
+    border: none;
+    font-weight: bold;
+  }
 
-    .swiper-slide img {
-      max-height: 100%;
-      max-width: 100%;
-      border-radius: 10px;
-    }
+  th {
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid #555;
+  }
 
-    .swiper-pagination-bullets {
-      bottom: 10px !important;
-    }
+  /* Linhas alternadas */
+  tr.laranja td {
+    color: orange;
+  }
 
-    /* Bolinha ativa = verde-limão */
-    .swiper-pagination-bullet-active {
-      background-color: #21ff01 !important;
-    }
-  </style>
+  tr.amarelo td {
+    color: yellow;
+  }
+</style>
 </head>
+
 <body>
 
-  <!-- TÍTULO -->
-  <div class="titulo">!cacofonia</div>
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Categoria</th>
+      <th>Intervalo de Números</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="laranja"><td>Mr. Eduardo</td><td>Fogo</td><td>1 a 300</td></tr>
+    <tr class="amarelo"><td>Wellington C.</td><td>Prata 14, Bronze 43</td><td>301 a 378</td></tr>
+    <tr class="laranja"><td>Romildo P.</td><td>Bronze 44</td><td>379 a 422</td></tr>
+    <tr class="amarelo"><td>Clark Rocha</td><td>Bronze 41</td><td>423 a 463</td></tr>
+    <tr class="laranja"><td>Jesse Jr.</td><td>Bronze 38</td><td>464 a 501</td></tr>
+    <tr class="amarelo"><td>Junior Timão</td><td>Bronze 37</td><td>502 a 538</td></tr>
+    <tr class="laranja"><td>Leandro Mello</td><td>Bronze 34</td><td>539 a 572</td></tr>
+    <tr class="amarelo"><td>Hamilton Mor</td><td>Bronze 27</td><td>573 a 599</td></tr>
+    <tr class="laranja"><td>Daniel K.</td><td>Bronze 26</td><td>600 a 625</td></tr>
+    <tr class="amarelo"><td>Du Higashi</td><td>Bronze 19</td><td>626 a 644</td></tr>
+    <tr class="laranja"><td>Yuri Santos</td><td>Bronze 19</td><td>645 a 663</td></tr>
+    <tr class="amarelo"><td>Marcos Azambuja</td><td>Bronze 19</td><td>664 a 682</td></tr>
+    <tr class="laranja"><td>Maqui Rivero</td><td>Ouro 16</td><td>683 a 842</td></tr>
+    <tr class="amarelo"><td>Bruno Breve</td><td>Ouro 16</td><td>843 a 1002</td></tr>
+    <tr class="laranja"><td>Lincoln Jr.</td><td>Ouro 16</td><td>1003 a 1162</td></tr>
+    <tr class="amarelo"><td>Luiz Martins</td><td>Prata 16</td><td>1163 a 1202</td></tr>
+    <tr class="laranja"><td>Alandson Lemos</td><td>Bronze 16</td><td>1203 a 1218</td></tr>
+    <tr class="amarelo"><td>Paulo H.</td><td>Bronze 15</td><td>1219 a 1233</td></tr>
+    <tr class="laranja"><td>Pintaroxa M.</td><td>Prata 14</td><td>1234 a 1268</td></tr>
+    <tr class="amarelo"><td>Bruno Rodrigues</td><td>Bronze 13</td><td>1269 a 1281</td></tr>
+    <tr class="laranja"><td>Junior Jr.</td><td>Prata 11, Bronze 2</td><td>1282 a 1311</td></tr>
+    <tr class="amarelo"><td>Gelson M.</td><td>Prata 8, Bronze 4</td><td>1312 a 1335</td></tr>
+    <tr class="laranja"><td>Vitor</td><td>Bronze 10</td><td>1336 a 1345</td></tr>
+    <tr class="amarelo"><td>Eduardo J.</td><td>Bronze 9</td><td>1346 a 1354</td></tr>
+    <tr class="laranja"><td>Giovanna</td><td>Prata 8, Moderadora 5</td><td>1355 a 1379</td></tr>
+    <tr class="amarelo"><td>Pedro Macedo</td><td>Bronze 8</td><td>1380 a 1387</td></tr>
+    <tr class="laranja"><td>Marcelo Cavaco</td><td>Ouro 7</td><td>1388 a 1457</td></tr>
+    <tr class="amarelo"><td>WDC Produções</td><td>Bronze 7</td><td>1458 a 1464</td></tr>
+    <tr class="laranja"><td>André</td><td>Bronze 6</td><td>1465 a 1470</td></tr>
+    <tr class="amarelo"><td>Yuri Iwai</td><td>Bronze 6</td><td>1471 a 1476</td></tr>
+    <tr class="laranja"><td>Ricardo Bezerra</td><td>Bronze 6</td><td>1477 a 1482</td></tr>
+    <tr class="amarelo"><td>Filipi Freitas</td><td>Bronze 6</td><td>1483 a 1488</td></tr>
+    <tr class="laranja"><td>Fabiola</td><td>Bronze 6, Moderadora 5</td><td>1489 a 1499</td></tr>
+    <tr class="amarelo"><td>Lucinio Faria</td><td>Prata 1, Bronze 4</td><td>1500 a 1506</td></tr>
+    <tr class="laranja"><td>Ivair Junior</td><td>Bronze 5</td><td>1507 a 1511</td></tr>
+    <tr class="amarelo"><td>João Messias</td><td>Prata 3</td><td>1512 a 1519</td></tr>
+    <tr class="laranja"><td>Chico Preto</td><td>Ouro 1</td><td>1520 a 1529</td></tr>
+    <tr class="amarelo"><td>Pedro Lira</td><td>Moderador 5</td><td>1530 a 1534</td></tr>
+  </tbody>
+</table>
 
-  <!-- CARROSSEL -->
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <!-- Substitua os links se necessário -->
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco01.png" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco02.png" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco03.png" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco04.png" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco05.png" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco06.png" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco07.png" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco08.png" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco09.png" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/cacofonia/main/caco10.png" /></div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.swiper', {
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      effect: 'fade',
-      fadeEffect: { crossFade: true },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  </script>
 </body>
 </html>
