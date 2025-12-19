@@ -14,23 +14,18 @@
   table {
     border-collapse: collapse;
     background: transparent;
-    width: auto; /* evita espaço desnecessário */
+    width: auto;
   }
 
-  th, td {
-    padding: 3px 6px; /* bem colado */
+  td {
+    padding: 3px 6px;
     font-weight: bold;
     line-height: 1.15;
     white-space: nowrap;
   }
 
-  th {
-    color: white;
-    border-bottom: 1px solid #666;
-  }
-
-  /* Coluna dos números */
-  td.numeros, th.numeros {
+  /* Linha vertical entre texto e números */
+  td.numeros {
     border-left: 1px solid #666;
     padding-left: 6px;
   }
@@ -49,12 +44,6 @@
 <body>
 
 <table>
-  <thead>
-    <tr>
-      <th>Inscrito / Categoria</th>
-      <th class="numeros">Nº Sorteio</th>
-    </tr>
-  </thead>
   <tbody>
     <tr class="laranja"><td>Mr. Eduardo — Fogo</td><td class="numeros">1 a 300</td></tr>
     <tr class="amarelo"><td>Wellington C. — Prata 14, Bronze 43</td><td class="numeros">301 a 378</td></tr>
